@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+
 # testing
 /coverage
 
@@ -21,3 +22,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+screenshots
+videos
+after_spec_results.json
+package-lock.json
+results.json
