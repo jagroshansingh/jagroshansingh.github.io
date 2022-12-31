@@ -26,7 +26,7 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box id='nav-menu'>
       <Flex
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
@@ -68,14 +68,7 @@ export default function Navbar() {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-          <Button
-            as={'a'}
-            fontSize={'sm'}
-            fontWeight={400}
-            variant={'link'}
-            href={'#'}>
-            Sign In
-          </Button>
+            <a href='./Jagroshan_Singh_Resume.pdf' download>
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
@@ -86,8 +79,9 @@ export default function Navbar() {
             _hover={{
               bg: 'pink.300',
             }}>
-            Sign Up
+            Resume
           </Button>
+          </a>
         </Stack>
       </Flex>
 
@@ -281,11 +275,23 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Learn Design',
+    label: 'Home',
     href: '#',
   },
   {
-    label: 'Hire Designers',
+    label: 'About',
     href: '#',
   },
+  {
+    label: 'Skills',
+    href: '#',
+  },
+  {
+    label: 'Project',
+    href: '#',
+  },
+  {
+    label: 'Contact',
+    href: '#',
+  }
 ];
