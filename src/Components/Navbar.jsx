@@ -26,7 +26,8 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box id='nav-menu'>
+    <div id='nav-menu'>
+    <Box >
       <Flex
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
@@ -89,6 +90,7 @@ export default function Navbar() {
         <MobileNav />
       </Collapse>
     </Box>
+    </div>
   );
 }
 
