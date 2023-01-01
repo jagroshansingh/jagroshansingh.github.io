@@ -11,13 +11,19 @@ import { Contact } from './Components/Contact';
 function App() {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/>
       <Heading><Center>Let's WORK the PROBLEM</Center></Heading>
       <Home/>
       <About/>
       <Skills/>
       <Projects/>
-      <Contact/>
+      <Contact/> */}
+      <div id="nav-menu"></div>
+      <div id="home"></div>
+      {/* <div id="about"></div> */}
+      <div id="skills"></div>
+      <div id="projects"></div>
+      <div id="contact"></div>
     </div>
   );
 }
