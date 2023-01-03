@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon, DownloadIcon } from '@chakra-ui/icons';
 
-const Links = ['Home', 'About', 'Skills', 'Project', 'Contact'];
+// const Links = ['Home', 'About', 'Skills', 'Project', 'Contact'];
 const NavItem=[
   {name:'Home',class:'nav-link home'},
   {name:'About',class:'nav-link about'},
@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} id='nav-menu'>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -58,9 +58,10 @@ export default function Navbar() {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
+              {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
-              ))}
+              ))} */}
+            {NavItem.map((item)=>(<div className={item.class}><NavLink key={item.name} >{item.name}</NavLink></div>))}
             </HStack>
           </HStack>
           <Flex alignItems={'center'} className="nav-link resume">
@@ -80,9 +81,10 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
+              {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
-              ))}
+              ))} */}
+              {NavItem.map((item)=>(<div className={item.class}><NavLink key={item.name}>{item.name}</NavLink></div>))}
             </Stack>
           </Box>
         ) : null}

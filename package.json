@@ -12,11 +12,14 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^8.0.2",
+    "github-calendar": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.4.0",
     "react-scripts": "5.0.1",
+    "react-simple-typewriter": "^5.0.1",
     "react-tooltip": "^4.5.1",
+    "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
