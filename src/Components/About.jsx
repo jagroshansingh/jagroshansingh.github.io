@@ -1,4 +1,4 @@
-import { Heading, Image } from '@chakra-ui/react'
+import { Box, Center, Heading, HStack, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -28,12 +28,27 @@ export const About = () => {
         </span>
       </Heading>
 
+<Stack direction={{base:'column',md:'row'}} align='center' spacing='4%'>
+    <Box>      
       <Image
+        margin='auto'
+        border='1px solid '
         borderRadius='full'
         boxSize='150px'
-        src='https://d2g5r6q74hb2rv.cloudfront.net/eyJidWNrZXQiOiJmbG93Y3YtaW1hZ2VzLXByb2QiLCJrZXkiOiJhdmF0YXIvWjdBRnVHY0FfWHU1VF9LS0VQX2xNLmpwZWciLCJlZGl0cyI6eyJncmF5c2NhbGUiOmZhbHNlLCJ3ZWJwIjp0cnVlLCJqcGVnIjp0cnVlLCJwbmciOmZhbHNlLCJleHRyYWN0Ijp7IndpZHRoIjo2OTIsImhlaWdodCI6NjkyLCJ0b3AiOjU3LCJsZWZ0Ijo3Nn0sInJlc2l6ZSI6eyJ3aWR0aCI6NjAwfX19'
-        alt='Dan Abramov'
+        src='https://avatars.githubusercontent.com/u/112631904?v=4'
+        alt='Profile Image'
       />
+      <Heading>Jagroshan Singh</Heading>
+    </Box> 
+
+      <Text>A passionate and curious web developer, skilled in MERN
+            stack. Proficient in both front-end and back-end with 1225+
+            hours of coding experience. High adaptability and hunger
+            to learn new technologies. Aims to leverage knowledge and
+            build user-friendly web applications while facilitating
+            organizational goals.
+      </Text>
+</Stack>
     </div>
   )
 }

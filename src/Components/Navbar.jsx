@@ -61,7 +61,7 @@ export default function Navbar() {
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))} */}
-            {NavItem.map((item)=>(<div className={item.class}><NavLink key={item.name} >{item.name}</NavLink></div>))}
+            {NavItem.map((item,index)=>(<div key={index} className={item.class}><NavLink key={item.name} >{item.name}</NavLink></div>))}
             </HStack>
           </HStack>
           <Flex alignItems={'center'} className="nav-link resume">
@@ -84,7 +84,7 @@ export default function Navbar() {
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))} */}
-              {NavItem.map((item)=>(<div className={item.class}><NavLink key={item.name}>{item.name}</NavLink></div>))}
+              {NavItem.map((item,index)=>(<div key={index} className={item.class}><NavLink key={item.name}>{item.name}</NavLink></div>))}
             </Stack>
           </Box>
         ) : null}
