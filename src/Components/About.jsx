@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <div id='about' className='about section'>
       <Heading
-        style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}
+        style={{ margin:'3%', fontWeight: 'normal' }}
       >
         I am{' '}
         <span style={{ color: 'red', fontWeight: 'bold' }}>

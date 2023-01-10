@@ -8,13 +8,16 @@ import { Skills } from './Components/Skills';
 import { Projects } from './Components/Projects';
 import { Contact } from './Components/Contact';
 import { Github } from './Components/Github';
+import styled from 'styled-components';
 
 function App() {
   return (
     <div className='App'>
+      <NavWrapper>
       <Navbar/>
+      </NavWrapper>
       <Box margin='0% 3%'>
-        <Heading><Center>Let's WORK the PROBLEM</Center></Heading>
+        {/* <Heading><Center>Let's WORK the PROBLEM</Center></Heading> */}
         <Home/>
         <About/>
         <Skills/>
@@ -28,3 +31,10 @@ function App() {
 }
 
 export default App;
+
+const NavWrapper=styled.div`
+border:0px solid;
+position:sticky;
+top:0px;
+z-index:1
+`
