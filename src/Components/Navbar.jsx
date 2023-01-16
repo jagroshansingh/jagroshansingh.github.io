@@ -53,7 +53,7 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box>Logo</Box>
+            {/* <Box>Logo</Box> */}
             <HStack
               as={'nav'}
               spacing={4}
@@ -66,7 +66,7 @@ export default function Navbar() {
           </HStack>
           <Flex alignItems={'center'} className="nav-link resume">
             <ButtonGroup size='md' isAttached variant='outline' colorScheme='teal'>
-              <a href='https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link'>
+              <a href='https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link' target='_blank'>
               <Button variant={'solid'} colorScheme={'teal'} >
                 Resume
               </Button>

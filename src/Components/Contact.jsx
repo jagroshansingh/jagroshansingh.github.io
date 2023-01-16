@@ -5,8 +5,6 @@ import {
   MdPhone,
   MdEmail,
   MdLocationOn,
-  MdFacebook,
-  MdOutlineEmail,
 } from 'react-icons/md';
 import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
 
@@ -51,6 +49,7 @@ export const Contact = () => {
             closeOnClick={false}
             hasArrow>
             <IconButton
+              id="contact-email"
               aria-label="email"
               variant="ghost"
               size="lg"
@@ -61,7 +60,7 @@ export const Contact = () => {
             />
           </Tooltip>
 
-          <Link href='https://github.com/jagroshansingh'>
+          <Link id="contact-github" href='https://github.com/jagroshansingh'>
             <IconButton
               aria-label="github"
               variant="ghost"
@@ -72,7 +71,7 @@ export const Contact = () => {
             />
           </Link>
 
-          <Link href='https://www.linkedin.com/in/jagroshan-singh/'>
+          <Link id="contact-linkedin" href='https://www.linkedin.com/in/jagroshan-singh/'>
             <IconButton
               aria-label="linkedin"
               variant="ghost"
@@ -86,6 +85,7 @@ export const Contact = () => {
 
         <HStack>
           <Button
+            id="contact-phone"
             size="md"
             height="48px"
             width="200px"

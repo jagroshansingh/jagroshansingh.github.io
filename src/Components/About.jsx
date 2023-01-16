@@ -28,9 +28,10 @@ export const About = () => {
         </span>
       </Heading>
 
-<Stack direction={{base:'column',md:'row'}} align='center' spacing='4%'>
+<Stack direction={{base:'column',md:'row'}} align='center' spacing='4%' margin={{base:0,md:'2rem'}} border='0px solid'>
     <Box>      
       <Image
+        className='home-img'
         margin='auto'
         border='1px solid '
         borderRadius='full'
@@ -38,10 +39,10 @@ export const About = () => {
         src='https://avatars.githubusercontent.com/u/112631904?v=4'
         alt='Profile Image'
       />
-      <Heading>Jagroshan Singh</Heading>
+      <Heading id="user-detail-name">Jagroshan Singh</Heading>
     </Box> 
 
-      <Text>A passionate and curious web developer, skilled in MERN
+      <Text id="user-detail-intro">A passionate and curious web developer, skilled in MERN
             stack. Proficient in both front-end and back-end with 1225+
             hours of coding experience. High adaptability and hunger
             to learn new technologies. Aims to leverage knowledge and

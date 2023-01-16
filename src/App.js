@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
-import { Heading,Center, Box } from '@chakra-ui/react';
+import { Heading,Center, Box, VStack } from '@chakra-ui/react';
 import { Home } from './Components/Home';
 import { About } from './Components/About';
 import { Skills } from './Components/Skills';
@@ -9,6 +9,7 @@ import { Projects } from './Components/Projects';
 import { Contact } from './Components/Contact';
 import { Github } from './Components/Github';
 import styled from 'styled-components';
+import ProjectCard from './Components/ProjectCard';
 
 function App() {
   return (
@@ -16,16 +17,15 @@ function App() {
       <NavWrapper>
       <Navbar/>
       </NavWrapper>
-      <Box margin='0% 3%'>
+      <VStack margin='0% 3%' spacing={9}>
         {/* <Heading><Center>Let's WORK the PROBLEM</Center></Heading> */}
         <Home/>
         <About/>
         <Skills/>
-        <Projects/>
-        <br/>
+        <Projects/>      
         <Github/>
         <Contact/>
-      </Box>
+      </VStack>
     </div>
   );
 }
