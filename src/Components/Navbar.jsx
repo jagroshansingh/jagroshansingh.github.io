@@ -1,5 +1,4 @@
 
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
@@ -17,14 +16,14 @@ import { HamburgerIcon, CloseIcon, AddIcon, DownloadIcon } from '@chakra-ui/icon
 
 // const Links = ['Home', 'About', 'Skills', 'Project', 'Contact'];
 const NavItem=[
-  {name:'Home',class:'nav-link home'},
-  {name:'About',class:'nav-link about'},
-  {name:'Skills',class:'nav-link skills'},
-  {name:'Project',class:'nav-link projects'},
-  {name:'Contact',class:'nav-link contact'},
+  {name:'Home',class:'nav-link home',id:'home'},
+  {name:'About',class:'nav-link about',id:'about'},
+  {name:'Skills',class:'nav-link skills',id:'skills'},
+  {name:'Project',class:'nav-link projects',id:'projects'},
+  {name:'Contact',class:'nav-link contact',id:'contact'},
 ]
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({children}) => (
   <Link
     px={2}
     py={1}
@@ -33,13 +32,14 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={'#'}>
-    {children}
+    href={`#${children[1]}`}>
+    {children[0]}
   </Link>
 );
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  
 
   return (
     <>
@@ -58,15 +58,13 @@ export default function Navbar() {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {/* {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))} */}
-            {NavItem.map((item,index)=>(<div key={index} className={item.class}><NavLink key={item.name} >{item.name}</NavLink></div>))}
+        
+            {NavItem.map((item,index)=>(<div key={index} className={item.class}><NavLink key={item.name}>{[item.name,item.id]}</NavLink></div>))}
             </HStack>
           </HStack>
           <Flex alignItems={'center'} className="nav-link resume">
             <ButtonGroup size='md' isAttached variant='outline' colorScheme='teal'>
-              <a href='https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link' target='_blank'>
+              <a href='https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link' target='_blank' rel="noreferrer">
               <Button variant={'solid'} colorScheme={'teal'} >
                 Resume
               </Button>
@@ -81,16 +79,13 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {/* {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))} */}
+             
               {NavItem.map((item,index)=>(<div key={index} className={item.class}><NavLink key={item.name}>{item.name}</NavLink></div>))}
             </Stack>
           </Box>
         ) : null}
       </Box>
 
-      {/* <Box p={4}>Main Content Here</Box> */}
     </>
   );
 }

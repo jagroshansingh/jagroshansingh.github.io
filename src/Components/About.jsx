@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <div id='about' className='about section'>
       <Heading
-        style={{ margin:'3%', fontWeight: 'normal' }}
+        style={{ margin:'0 0 3% 0', fontWeight: 'normal' }}
       >
         I am{' '}
         <span style={{ color: 'red', fontWeight: 'bold' }}>
@@ -28,14 +28,14 @@ export const About = () => {
         </span>
       </Heading>
 
-<Stack direction={{base:'column',md:'row'}} align='center' spacing='4%' margin={{base:0,md:'2rem'}} border='0px solid'>
+<Stack direction='column' align='center' spacing='4%' margin={{base:0,md:'0 5rem',lg:'0 9rem'}} border='0px solid'>
     <Box>      
       <Image
         className='home-img'
         margin='auto'
         border='1px solid '
         borderRadius='full'
-        boxSize='150px'
+        boxSize='250px'
         src='https://avatars.githubusercontent.com/u/112631904?v=4'
         alt='Profile Image'
       />

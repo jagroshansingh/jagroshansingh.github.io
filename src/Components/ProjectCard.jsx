@@ -75,7 +75,7 @@ export default function ProjectCard({ image, title, subtitle, desc, techstack, g
             justifyContent={'space-between'}
             alignItems={'center'}>
 
-            <a href={github} target="_blank">
+            <a href={github} target="_blank" rel="noreferrer">
               <Button
               className="project-github-link"
                 flex={1}
@@ -88,7 +88,7 @@ export default function ProjectCard({ image, title, subtitle, desc, techstack, g
               </Button>
             </a>
 
-            <a href={deployed} target="_blank">
+            <a href={deployed} target="_blank" rel="noreferrer">
               <Button
               className="project-deployed-link"
                 flex={1}

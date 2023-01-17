@@ -13,7 +13,7 @@ export const Contact = () => {
   return (
     <div id='contact'>
       <VStack>
-        <Heading
+        <Heading size={{base:'lg', md:'xl'}}
           style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}
         >
           Let's{' '}
@@ -33,10 +33,7 @@ export const Contact = () => {
             />
           </span>
         </Heading>
-        {/* <HStack border='1px solid'>
-        <Text>Let's</Text>
-        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Figure+out;get+after+it+Relentlessly;make+the+most+of+Today;Work+the+Problem" alt="Typing SVG" />
-      </HStack> */}
+       
         <Heading>Connect with me:</Heading>
         <HStack
           mt={{ lg: 10, md: 10 }}
@@ -95,16 +92,7 @@ export const Contact = () => {
             leftIcon={<MdPhone color="#1970F1" size="20px" />}>
             +91-9784541446
           </Button>
-          {/* <Button
-            size="md"
-            height="48px"
-            width="200px"
-            variant="ghost"
-            color="#DCE2FF"
-            _hover={{ border: '2px solid #1C6FEB' }}
-            leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-            jagroshansingh615@gmail.com
-          </Button> */}
+        
           <Button
             size="md"
             height="48px"
