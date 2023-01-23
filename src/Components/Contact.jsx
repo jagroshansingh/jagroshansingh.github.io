@@ -14,7 +14,7 @@ export const Contact = () => {
     <div id='contact'>
       <VStack>
         <Heading size={{base:'lg', md:'xl'}}
-          style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}
+          style={{padding:'1rem',margin: 'auto 0', fontWeight: 'normal' }}
         >
           Let's{' '}
           <span style={{ color: 'red', fontWeight: 'bold' }}>

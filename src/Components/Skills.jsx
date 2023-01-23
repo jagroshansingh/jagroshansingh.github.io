@@ -1,49 +1,66 @@
-import { Box, Center, Heading, Image, SimpleGrid, Stack } from '@chakra-ui/react'
-import React from 'react'
+import {
+  Box,
+  Center,
+  Heading,
+  Image,
+  SimpleGrid,
+  Stack,
+} from "@chakra-ui/react";
+import React from "react";
 
 export const Skills = () => {
+  const techData = [
+    {
+      src: "https://sainraghuveer.github.io/static/media/html.adce51a1b31e2f045fc6.jpg",
+      name: "HTML",
+    },
+    {
+      src: "https://sainraghuveer.github.io/static/media/CSS.bac713639f92eab74cc7.jpg",
+      name: "CSS",
+    },
+    {
+      src: "https://sainraghuveer.github.io/static/media/JS.40de590057973b1b3b00.jpg",
+      name: "JavaScript",
+    },
+    {
+      src: "https://sainraghuveer.github.io/static/media/nodejs.171aa0646eb609048e73.jpg",
+      name: "NodeJS",
+    },
+    {
+      src: "https://sainraghuveer.github.io/static/media/react.e8f87cb925d4b6c05256.jpg",
+      name: "React",
+    },
+    {
+      src: "https://sainraghuveer.github.io/static/media/native.13495c753d42f8c45607.jpg",
+      name: "Redux",
+    },
+    {
+      src: "https://sainraghuveer.github.io/static/media/mongodb.ee6e1f04b258038b322d.jpg",
+      name: "MongoDB",
+    },
+  ];
   return (
-    <div id='skills'>
-      <Center><Heading>Tech Stacks</Heading></Center>
-      <SimpleGrid  columns={{base:2,md:4}} border='0px solid' spacing='1rem 4rem'>
-        <Box border='0px solid' >
-          <Image
-            borderRadius='full'
-            boxSize='150px'
-            src='https://cdn3d.iconscout.com/3d/free/thumb/html-5728485-4781249.png'
-            alt='HTML_logo'
-            
-          />
-          <Heading size='sm'>HTML</Heading>
-        </Box>
-        <Box>
-          <Image
-            borderRadius='full'
-            boxSize='150px'
-            src='https://cdn3d.iconscout.com/3d/premium/thumb/css-file-5684004-4734968.png'
-            alt='Css_logo'
-          />
-          <Heading size='sm'>CSS</Heading>
-        </Box>
-        <Box>
-          <Image
-            borderRadius='full'
-            boxSize='150px'
-            src='https://cdn3d.iconscout.com/3d/free/thumb/javascript-logo-6563586-5453022.png'
-            alt='JavaScript_logo'
-          />
-          <Heading size='sm'>JavaScript</Heading>
-        </Box>
-        <Box>
-          <Image
-            borderRadius='full'
-            boxSize='150px'
-            src='https://everythingiknows.com/wp-content/uploads/2022/04/node-js-new.png'
-            alt='NodeJs_logo'
-          />
-          <Heading size='sm'>NodeJS</Heading>
-        </Box>
+    <div id="skills">
+      <Heading as={'u'} color={'green'}>Tech Stacks</Heading>
+      <SimpleGrid
+        columns={{ base: 2, sm:3, lg: 5 }}
+        border="0px solid"
+        spacing="2rem"
+        marginTop={5}
+      >
+        {techData.map((tech,i) => (
+          <Box key={i} border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'}>
+            <Image
+              border={"0px"}
+              boxSize={{ base: '70px', sm:'100px', lg: '120px' }}
+              src={tech.src}
+              alt={tech.name}
+            />
+            <Heading size="sm">{tech.name}</Heading>
+          </Box>
+        ))}
+
       </SimpleGrid>
     </div>
-  )
-}
+  );
+};

@@ -5,7 +5,7 @@ import ReactTooltip from 'react-tooltip'
 
 export const Github = () => {
   return (
-    <div >
+    <div id='github' >
       <VStack spacing={5}>
         <Center><Heading>GitHub</Heading></Center>
         <Center>
