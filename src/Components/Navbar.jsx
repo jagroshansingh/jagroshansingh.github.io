@@ -85,17 +85,17 @@ export default function Navbar() {
           </HStack>
           <Flex alignItems={"center"} className="nav-link resume">
             <ButtonGroup
-              size="md"
+              size={{base:'sm',md:'md'}}
               isAttached
               variant="outline"
-              colorScheme="teal"
+              colorScheme="green"
             >
               <a
                 href="https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button variant={"solid"} colorScheme={"teal"}>
+                <Button variant={"solid"} >
                   Resume
                 </Button>
               </a>

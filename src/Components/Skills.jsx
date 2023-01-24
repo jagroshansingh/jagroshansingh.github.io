@@ -38,25 +38,30 @@ export const Skills = () => {
       src: "https://sainraghuveer.github.io/static/media/mongodb.ee6e1f04b258038b322d.jpg",
       name: "MongoDB",
     },
+    {
+      src:"https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+      name:"TypeScript"
+    }
   ];
   return (
     <div id="skills">
-      <Heading as={'u'} color={'green'}>Tech Stacks</Heading>
+      <Heading as={'u'} color={'green'} border={'0px'}>Tech Stacks</Heading>
+      <Heading border={'0px'} marginTop={'3%'}>Skills</Heading>
       <SimpleGrid
         columns={{ base: 2, sm:3, lg: 5 }}
         border="0px solid"
-        spacing="2rem"
-        marginTop={5}
+        spacing="2rem"    
+        marginTop={'2%'}   
       >
         {techData.map((tech,i) => (
           <Box key={i} border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'}>
             <Image
               border={"0px"}
-              boxSize={{ base: '70px', sm:'100px', lg: '120px' }}
+              boxSize={{ base: '90px', sm:'100px', lg: '120px' }}
               src={tech.src}
               alt={tech.name}
             />
-            <Heading size="sm">{tech.name}</Heading>
+            <Heading size="sm" marginTop={'5%'}>{tech.name}</Heading>
           </Box>
         ))}
 

@@ -34,7 +34,7 @@ function App() {
 
         {sections.map((section,i) => (
           <Box key={i} w={"100vw"} border={"0px"} >
-            <Box w={"85%"} m={"auto"} border={"0px"} textAlign={'center'}>
+            <Box w={"85%"} m={"auto"} border={"0px"} textAlign={'center'} marginBottom={'5%'}>
               {" "}
               {section()}{" "}
             </Box>

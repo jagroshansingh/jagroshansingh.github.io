@@ -13,7 +13,7 @@ export const Contact = () => {
   return (
     <div id='contact'>
       <VStack>
-        <Heading size={{base:'lg', md:'xl'}}
+        <Heading size={{base:'md', md:'xl'}}
           style={{padding:'1rem',margin: 'auto 0', fontWeight: 'normal' }}
         >
           Let's{' '}
@@ -26,7 +26,7 @@ export const Contact = () => {
               typeSpeed={100}
               deleteSpeed={70}
               delaySpeed={1000}
-              words={['Figure out', 'get after it Relentlessly', 'make the most of Today', 'Work the Problem']}
+              words={['Figure out', 'get after it Relentlessly', 'Work the Problem']}
               onLoop={(loopCount) =>
                 console.log(`Just completed loop ${loopCount}`)
               }

@@ -7,8 +7,8 @@ export const Github = () => {
   return (
     <div id='github' >
       <VStack spacing={5}>
-        <Center><Heading>GitHub</Heading></Center>
-        <Center>
+        <Heading as={'u'} color={'green'} marginBottom={'3%'}>GitHub</Heading>
+        <Center >
           <GitHubCalendar username='jagroshansingh'>
             <ReactTooltip html delayShow={20} />
           </GitHubCalendar>

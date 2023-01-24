@@ -29,6 +29,7 @@ export default function ProjectCard({ image, title, subtitle, desc, techstack, g
           <Image
             objectFit="100%"
             boxSize="100%"
+            border={'1px'}
             src={image}
           />
         </Flex>
@@ -94,13 +95,13 @@ export default function ProjectCard({ image, title, subtitle, desc, techstack, g
                 flex={1}
                 fontSize={'sm'}
                 rounded={'full'}
-                bg={'blue.400'}
+                bg={'green'}
                 color={'white'}
                 boxShadow={
                   '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
                 }
                 _hover={{
-                  bg: 'blue.500',
+                  bg: 'green.500',
                 }}
                 _focus={{
                   bg: 'blue.500',
