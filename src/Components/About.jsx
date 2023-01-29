@@ -48,7 +48,7 @@ export const About = () => {
           while facilitating organizational goals.
         </Heading>
 
-        <Flex alignItems={"center"} className="nav-link resume">
+        <Flex alignItems={"center"} id="resume-button-2">
             <ButtonGroup
               size={'lg'}
               isAttached

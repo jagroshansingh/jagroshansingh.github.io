@@ -8,19 +8,19 @@ export const Github = () => {
     <div id='github' >
       <VStack spacing={5}>
         <Heading as={'u'} color={'green'} marginBottom={'3%'}>GitHub</Heading>
-        <Center >
+        <Center className='react-activity-calendar' >
           <GitHubCalendar username='jagroshansingh'>
             <ReactTooltip html delayShow={20} />
           </GitHubCalendar>
         </Center>
         <HStack>
           <Wrap justify='center'>
-          <Image src='https://github-readme-stats.vercel.app/api?username=jagroshansingh&show_icons=true&theme=radical' />
-          <Image src="https://github-readme-streak-stats.herokuapp.com?user=jagroshansingh&theme=dark" />
+          <Image id="github-stats-card" src='https://github-readme-stats.vercel.app/api?username=jagroshansingh&show_icons=true&theme=radical' />
+          <Image id='github-streak-stats' src="https://github-readme-streak-stats.herokuapp.com?user=jagroshansingh&theme=dark" />
           </Wrap>
         </HStack>
         <Center>
-          <Image src='https://github-readme-stats.vercel.app/api/top-langs/?username=jagroshansingh' />
+          <Image id="github-top-langs" src='https://github-readme-stats.vercel.app/api/top-langs/?username=jagroshansingh' />
         </Center>
       </VStack>
     </div>

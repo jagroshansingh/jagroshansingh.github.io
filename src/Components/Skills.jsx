@@ -54,14 +54,15 @@ export const Skills = () => {
         marginTop={'2%'}   
       >
         {techData.map((tech,i) => (
-          <Box key={i} border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'}>
+          <Box key={i} className="skills-card" border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'}>
             <Image
               border={"0px"}
               boxSize={{ base: '90px', sm:'100px', lg: '120px' }}
               src={tech.src}
               alt={tech.name}
+              className='skills-card-img'
             />
-            <Heading size="sm" marginTop={'5%'}>{tech.name}</Heading>
+            <Heading className="skills-card-name" size="sm" marginTop={'5%'}>{tech.name}</Heading>
           </Box>
         ))}
 
