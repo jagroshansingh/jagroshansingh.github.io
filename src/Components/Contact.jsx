@@ -34,7 +34,7 @@ export const Contact = () => {
           </span>
         </Heading>
        
-        <Heading>Connect with me:</Heading>
+        <Heading size={{base:'lg', md:'xl'}}>Connect with me:</Heading>
         <HStack
           mt={{ lg: 10, md: 10 }}
           spacing={5}
@@ -46,7 +46,7 @@ export const Contact = () => {
             closeOnClick={false}
             hasArrow>
             <IconButton
-              id="contact-email"
+              // id="contact-email"
               aria-label="email"
               variant="ghost"
               size="lg"
@@ -80,12 +80,12 @@ export const Contact = () => {
           </Link>
         </HStack>
 
-        <HStack>
+        <Stack direction={{base:'column',md:'row'}}  border={'0px'} margin={'auto'}>
           <Button
             id="contact-phone"
             size="md"
             height="48px"
-            width="200px"
+            // width="200px"
             variant="ghost"
             color="#DCE2FF"
             _hover={{ border: '2px solid #1C6FEB' }}
@@ -96,7 +96,7 @@ export const Contact = () => {
           <Button
             size="md"
             height="48px"
-            width="200px"
+            // width="150px"
             variant="ghost"
             color="#DCE2FF"
             _hover={{ border: '2px solid #1C6FEB' }}
@@ -104,7 +104,19 @@ export const Contact = () => {
             Gaya, Bihar
           </Button>
 
-        </HStack>
+          <Button
+           id="contact-email"
+            size="md"
+            height="48px"
+            // width="300px"
+            variant="ghost"
+            color="#DCE2FF"
+            _hover={{ border: '2px solid #1C6FEB' }}
+            leftIcon={<MdEmail color="#1970F1" size="20px" />}>
+            jagroshansingh615@gmail.com
+          </Button>
+
+        </Stack>
       </VStack>
     </div>
   )

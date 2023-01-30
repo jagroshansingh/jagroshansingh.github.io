@@ -83,7 +83,7 @@ export default function Navbar() {
               ))}
             </HStack>
           </HStack>
-          <Flex alignItems={"center"} className="nav-link resume" id="resume-button-1">
+          <Flex alignItems={"center"} >
             <ButtonGroup
               size={{base:'sm',md:'md'}}
               isAttached
@@ -99,7 +99,7 @@ export default function Navbar() {
                   Resume
                 </Button>
               </a>
-              <a href="./Jagroshan_Singh_Resume" download>
+              <a href="./Jagroshan_Singh_Resume.pdf" download className="nav-link resume" id="resume-button-1">
                 <IconButton
                   aria-label="Add to friends"
                   icon={<DownloadIcon />}

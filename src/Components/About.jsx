@@ -13,9 +13,11 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 export const About = () => {
+  const navigate=useNavigate()
   return (
     <div id="about" className="about section">
       
@@ -48,7 +50,7 @@ export const About = () => {
           while facilitating organizational goals.
         </Heading>
 
-        <Flex alignItems={"center"} id="resume-button-2">
+        <Flex alignItems={"center"} >
             <ButtonGroup
               size={'lg'}
               isAttached
@@ -60,11 +62,11 @@ export const About = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button variant={"solid"} >
+                <Button variant={"solid"}>
                   Resume
                 </Button>
               </a>
-              <a href="./Jagroshan_Singh_Resume" download>
+              <a href="./Jagroshan_Singh_Resume.pdf" download id="resume-button-2">
                 <IconButton
                   aria-label="Add to friends"
                   icon={<DownloadIcon />}
