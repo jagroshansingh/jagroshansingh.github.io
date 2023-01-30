@@ -99,7 +99,7 @@ export default function Navbar() {
                   Resume
                 </Button>
               </a>
-              <a href="./Jagroshan_Singh_Resume.pdf" download className="nav-link resume" id="resume-button-1">
+              <a href="./Jagroshan_Singh_Resume.pdf" download={'Jagroshan_Singh_Resume'} className="nav-link resume" id="resume-button-1">
                 <IconButton
                   aria-label="Add to friends"
                   icon={<DownloadIcon />}

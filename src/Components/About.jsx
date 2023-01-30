@@ -66,7 +66,7 @@ export const About = () => {
                   Resume
                 </Button>
               </a>
-              <a href="./Jagroshan_Singh_Resume.pdf" download id="resume-button-2">
+              <a href="./Jagroshan_Singh_Resume.pdf" download={'Jagroshan_Singh_Resume'} id="resume-button-2">
                 <IconButton
                   aria-label="Add to friends"
                   icon={<DownloadIcon />}
