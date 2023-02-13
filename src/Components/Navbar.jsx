@@ -91,20 +91,23 @@ export default function Navbar() {
               colorScheme="green"
             >
               <a
-                href="https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link"
+                // href="https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link"
+                href="./Jagroshan_Singh_Resume.pdf"
+                onClick={() => window.open("https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link")}
                 target="_blank"
                 rel="noreferrer"
+                download={'Jagroshan_Singh_Resume'}
               >
                 <Button variant={"solid"} >
                   Resume
                 </Button>
               </a>
-              <a href="./Jagroshan_Singh_Resume.pdf" download={'Jagroshan_Singh_Resume'} className="nav-link resume" id="resume-button-1">
+              {/* <a href="./Jagroshan_Singh_Resume.pdf" download={'Jagroshan_Singh_Resume'} className="nav-link resume" id="resume-button-1">
                 <IconButton
                   aria-label="Add to friends"
                   icon={<DownloadIcon />}
                 />
-              </a>
+              </a> */}
             </ButtonGroup>
           </Flex>
         </Flex>
@@ -113,7 +116,7 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {NavItem.map((item, index) => (
-                <div key={index} className={item.class}>
+                <div key={index} className={item.class} onClick={onClose}>
                   <NavLink key={item.name}>{[item.name, item.id]}</NavLink>
                 </div>
               ))}

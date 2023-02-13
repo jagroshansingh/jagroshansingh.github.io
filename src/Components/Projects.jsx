@@ -53,7 +53,7 @@ export const Projects = () => {
 
   return (
     <div id="projects">
-      <Heading as={"u"} color={"green"}>
+      <Heading color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>
         Projects
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} marginTop={'3%'}>

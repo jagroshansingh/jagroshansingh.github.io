@@ -28,7 +28,7 @@ export const About = () => {
         margin={{ base: 0, md: "0 5rem", lg: "0 9rem" }}
         border={'0px'}
       >
-        <Heading as={'u'} color={'green'}  border={'0px'} marginBottom={'2%'}>About</Heading>
+        <Heading  color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>About</Heading>
         <Box>
           <Image
             className="home-img"
@@ -52,26 +52,29 @@ export const About = () => {
 
         <Flex alignItems={"center"} >
             <ButtonGroup
-              size={'lg'}
+              size={{base:'sm',md:'md'}}
               isAttached
               variant="outline"
               colorScheme="green"
             >
               <a
-                href="https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link"
+                // href="https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link"
+                href="./Jagroshan_Singh_Resume.pdf"
+                onClick={() => window.open("https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link")}
                 target="_blank"
                 rel="noreferrer"
+                download={'Jagroshan_Singh_Resume'}
               >
-                <Button variant={"solid"}>
+                <Button variant={"solid"} >
                   Resume
                 </Button>
               </a>
-              <a href="./Jagroshan_Singh_Resume.pdf" download={'Jagroshan_Singh_Resume'} id="resume-button-2">
+              {/* <a href="./Jagroshan_Singh_Resume.pdf" download={'Jagroshan_Singh_Resume'} className="nav-link resume" id="resume-button-1">
                 <IconButton
                   aria-label="Add to friends"
                   icon={<DownloadIcon />}
                 />
-              </a>
+              </a> */}
             </ButtonGroup>
           </Flex>
       </Stack>

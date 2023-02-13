@@ -45,7 +45,7 @@ export const Skills = () => {
   ];
   return (
     <div id="skills">
-      <Heading as={'u'} color={'green'} border={'0px'}>Tech Stacks</Heading>
+      <Heading color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>Tech Stacks</Heading>
       <Heading border={'0px'} marginTop={'3%'}>Skills</Heading>
       <SimpleGrid
         columns={{ base: 2, sm:3, lg: 5 }}

@@ -30,23 +30,20 @@ function App() {
         <Navbar />
       </NavWrapper>
       <VStack border={"0px"}>
-        {/* <Heading><Center>Let's WORK the PROBLEM</Center></Heading> */}
-
-        {sections.map((section,i) => (
-          <Box key={i} w={"100vw"} border={"0px"} >
-            <Box w={"85%"} m={"auto"} border={"0px"} textAlign={'center'} marginBottom={'5%'}>
+        {sections.map((section, i) => (
+          <Box key={i} w={"100vw"} border={"0px"}>
+            <Box
+              w={"85%"}
+              m={"auto"}
+              border={"0px"}
+              textAlign={"center"}
+              marginBottom={"5%"}
+            >
               {" "}
               {section()}{" "}
             </Box>
           </Box>
         ))}
-
-        {/* <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <Github />
-        <Contact /> */}
       </VStack>
     </div>
   );

@@ -20,6 +20,7 @@ export const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("jagroshansingh615@gmail.com");
   return (
     <div id="contact">
+      <hr/>
       <VStack>
         <Heading
           size={{ base: "md", md: "xl" }}
