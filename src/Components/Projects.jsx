@@ -29,7 +29,7 @@ export const Projects = () => {
       desc: "BA..e is a travel booking service, especially serving to the LGBTQ+ community. No matter who you are or where you’re going, you deserve to travel freely.",
       techstack: ["React", "Chakra-UI", "HTML/CSS", "JavaScript"],
       github: "https://github.com/jagroshansingh/cute-hand-680",
-      deployed: "https://effortless-fenglisu-0041ef.netlify.app/",
+      deployed: "https://illustrious-dodol-5a220c.netlify.app/",
     },
     {
       image: "/Glamox_LandingPage.png",
@@ -38,7 +38,7 @@ export const Projects = () => {
       desc: "Glamox is an e-commerce platform providing beauty, personal care, cosmetic commodities and fashion solutions for both men and women.",
       techstack: ["React", "TypeScript", "Chakra-UI", "Redux"],
       github: "https://github.com/rajeshdeo/axiomatic-yard-6345",
-      deployed: "https://helpful-crumble-d311e0.netlify.app/",
+      deployed: "https://exquisite-tapioca-454087.netlify.app/",
     },
     {
       image: "/Myntra_LandingPage.png",
