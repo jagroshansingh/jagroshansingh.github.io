@@ -6,11 +6,6 @@ import {
   Center,
   Box,
   VStack,
-  TableContainer,
-  Table,
-  Tbody,
-  Tr,
-  Td,
 } from "@chakra-ui/react";
 import { Home } from "./Components/Home";
 import { About } from "./Components/About";
@@ -25,7 +20,7 @@ import { Tools } from "./Components/Tools";
 function App() {
   const sections = [Home, About, Skills, Tools, Projects, Github, Contact];
   return (
-    <div>
+    <div style={{backgroundColor:"whitesmoke"}}>
       <NavWrapper>
         <Navbar />
       </NavWrapper>
@@ -38,6 +33,7 @@ function App() {
               border={"0px"}
               textAlign={"center"}
               marginBottom={"5%"}
+            
             >
               {" "}
               {section()}{" "}

@@ -5,8 +5,8 @@ import ReactTooltip from 'react-tooltip'
 
 export const Github = () => {
   return (
-    <div id='github' >
-      <Heading color={'green'} borderY={'2px'} marginBottom={'4%'} p={'0.5%'} backgroundColor={'gray.100'}>GitHub</Heading>
+    <div id='github' style={{border:'1px solid whitesmoke'}}>
+      <Heading marginTop={'63px'} color={'green'} borderY={'2px'} marginBottom={'4%'} p={'0.5%'} backgroundColor={'gray.100'}>GitHub</Heading>
       <VStack spacing={5}>
         <Center className='react-activity-calendar' >
           <GitHubCalendar username='jagroshansingh'>

@@ -49,7 +49,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} id="nav-menu">
+      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} id="nav-menu" backgroundColor={'green.100'}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
@@ -96,7 +96,7 @@ export default function Navbar() {
                 onClick={() => window.open("https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link")}
                 target="_blank"
                 rel="noreferrer"
-                download={'Jagroshan_Singh_Resume'}
+                download={'fw21_0966-Jagroshan-Singh-Resume'}
               >
                 <Button variant={"solid"} >
                   Resume

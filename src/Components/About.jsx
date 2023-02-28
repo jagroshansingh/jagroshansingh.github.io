@@ -19,7 +19,7 @@ import { Typewriter } from "react-simple-typewriter";
 export const About = () => {
   const navigate=useNavigate()
   return (
-    <div id="about" className="about section">
+    <div id="about" className="about section" style={{border:'1px solid whitesmoke'}}>
       
       <Stack
         direction="column"
@@ -28,7 +28,7 @@ export const About = () => {
         margin={{ base: 0, md: "0 5rem", lg: "0 9rem" }}
         border={'0px'}
       >
-        <Heading  color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>About</Heading>
+        <Heading marginTop={'63px'} color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>About</Heading>
         <Box>
           <Image
             className="home-img"
@@ -63,7 +63,7 @@ export const About = () => {
                 onClick={() => window.open("https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link")}
                 target="_blank"
                 rel="noreferrer"
-                download={'Jagroshan_Singh_Resume'}
+                download={'fw21_0966-Jagroshan-Singh-Resume'}
               >
                 <Button variant={"solid"} >
                   Resume

@@ -4,11 +4,11 @@ import React from 'react'
 export const Tools = () => {
     const techData = [
         {
-          src: "https://sainraghuveer.github.io/static/media/git.f67bf83802ae8462b585.jpg",
+          src: "./pics/git_icon.png",
           name: "Git",
         },
         {
-          src: "https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg",
+          src: "./pics/github_icon.png",
           name: "GitHub",
         },
         {

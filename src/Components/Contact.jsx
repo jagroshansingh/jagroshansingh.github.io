@@ -55,22 +55,6 @@ export const Contact = () => {
           px={5}
           alignItems="flex-start"
         >
-          {/* <Tooltip
-            label={hasCopied ? "Email Copied!" : "Copy Email"}
-            closeOnClick={false}
-            hasArrow
-          >
-            <IconButton
-              // id="contact-email"
-              aria-label="email"
-              variant="ghost"
-              size="lg"
-              isRound={true}
-              _hover={{ bg: "#0D74FF" }}
-              icon={<MdEmail size="28px" />}
-              onClick={onCopy}
-            />
-          </Tooltip> */}
 
           <Link
             id="contact-github"
@@ -114,7 +98,7 @@ export const Contact = () => {
             height="48px"
             // width="200px"
             variant="ghost"
-            color="#DCE2FF"
+            color="blue.300"
             _hover={{ border: "2px solid #1C6FEB" }}
             leftIcon={<MdPhone color="#1970F1" size="20px" />}
           >
@@ -126,7 +110,7 @@ export const Contact = () => {
             height="48px"
             // width="150px"
             variant="ghost"
-            color="#DCE2FF"
+            color="blue.300"
             _hover={{ border: "2px solid #1C6FEB" }}
             leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
           >
@@ -144,7 +128,7 @@ export const Contact = () => {
               height="48px"
               // width="300px"
               variant="ghost"
-              color="#DCE2FF"
+              color="blue.300"
               _hover={{ border: "2px solid #1C6FEB" }}
               onClick={onCopy}
               leftIcon={<MdEmail color="#1970F1" size="20px" />}

@@ -4,9 +4,9 @@ import { Typewriter } from "react-simple-typewriter";
 
 export const Home = () => {
   return (
-    <div id='home'>
+    <div id='home' style={{border:'1px solid whitesmoke'}}>
       <Heading
-        style={{ margin:'3rem 0', fontWeight: 'normal' }}
+        style={{ margin:'3rem 0', fontWeight: 'normal', marginTop:'63px' }}
       >
         I am{' '}
         <span style={{ color: 'red', fontWeight: 'bold' }}>

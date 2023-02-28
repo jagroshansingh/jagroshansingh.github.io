@@ -52,8 +52,8 @@ export const Projects = () => {
   ];
 
   return (
-    <div id="projects">
-      <Heading color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>
+    <div id="projects" style={{border:'1px solid whitesmoke'}}>
+      <Heading marginTop={'63px'} color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>
         Projects
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} marginTop={'3%'}>
