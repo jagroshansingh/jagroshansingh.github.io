@@ -63,7 +63,7 @@ export const About = () => {
                 onClick={() => window.open("https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link")}
                 target="_blank"
                 rel="noreferrer"
-                download={'fw21_0966-Jagroshan-Singh-Resume'}
+                download={'Jagroshan-Singh-Resume'}
               >
                 <Button variant={"solid"} >
                   Resume

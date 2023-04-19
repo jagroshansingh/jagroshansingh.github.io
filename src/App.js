@@ -32,7 +32,7 @@ function App() {
               m={"auto"}
               border={"0px"}
               textAlign={"center"}
-              marginBottom={"5%"}
+              marginBottom={i!=0?"5%":"0%"}
             
             >
               {" "}
