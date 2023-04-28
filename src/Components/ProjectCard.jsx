@@ -34,8 +34,8 @@ export default function ProjectCard({
         boxShadow={"2xl"}
         padding={4}
       >
-        <Flex flex={1} bg="blue.200">
-          <Image objectFit="100%" boxSize="100%" border={"1px"} src={image} />
+        <Flex flex={1} bg="blue.200" boxShadow={"outline"} border={'0px'} _hover={{transitionDuration:"0.5s",boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}}>
+          <Image objectFit="100%" boxSize="100%" border={"0px"} src={image} />
         </Flex>
 
         <Stack
