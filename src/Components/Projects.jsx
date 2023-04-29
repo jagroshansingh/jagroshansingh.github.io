@@ -28,8 +28,8 @@ export const Projects = () => {
       // subtitle: "Clone-Orbitz.com",
       desc: "A travel booking service, especially serving to the LGBTQ+ community. No matter who you are or where you’re going, you deserve to travel freely.",
       techstack: ["React", "Chakra-UI", "Express"],
-      github: "https://github.com/jagroshansingh/cute-hand-680",
-      deployed: "https://illustrious-dodol-5a220c.netlify.app/",
+      github: "https://github.com/jagroshansingh/BA..e-BeAsYouAre",
+      deployed: "https://baee.netlify.app/",
     },
     {
       image: "/Glamox_LandingPage.png",
@@ -37,7 +37,7 @@ export const Projects = () => {
       subtitle: "Clone-Nykaa.com",
       desc: "Glamox is an e-commerce platform providing beauty, personal care, cosmetic commodities and fashion solutions for both men and women.",
       techstack: ["React", "TypeScript", "Redux"],
-      github: "https://github.com/rajeshdeo/axiomatic-yard-6345",
+      github: "https://github.com/rajeshdeo/glamox",
       deployed: "https://exquisite-tapioca-454087.netlify.app/",
     },
     {
@@ -46,8 +46,8 @@ export const Projects = () => {
       subtitle: "Clone-Mailtrap.io",
       desc: "InfinityMail is an add-on for safe and comprehensive email testing. It is implemented as a dummy SMTP server. It catches all the test emails and displays them in virtual inboxes.",
       techstack: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/randomFrisby/spotty-butter-9254",
-      deployed: "https://marvelous-starlight-49c422.netlify.app/",
+      github: "https://github.com/randomFrisby/Infinite-Mail",
+      deployed: "https://infinite-mail.netlify.app/",
     }
     // {
     //   image: "/Myntra_LandingPage.png",

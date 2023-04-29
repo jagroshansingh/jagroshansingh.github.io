@@ -33,18 +33,20 @@ export const About = () => {
           <Image
             className="home-img"
             margin="auto"
-            border="1px solid "
+            border="0px solid "
             borderRadius="full"
             boxSize="250px"
             src="https://avatars.githubusercontent.com/u/112631904?v=4"
             alt="Profile Image"
+            boxShadow={'outline'}
+            _hover={{boxShadow:'dark-lg', transform:"scale(1.05)",transitionDuration:"0.5s"}}
           />
           <Heading id="user-detail-name">Jagroshan Singh</Heading>
         </Box>
 
-        <Heading id="user-detail-intro" size={'md'} color={'grey'}>
+        <Heading id="user-detail-intro" size={'md'} color={'grey'} fontStyle={'italic'}>
           A passionate and curious web developer, skilled in MERN stack.
-          Proficient in both front-end and back-end with 1225+ hours of coding
+          Proficient in both front-end and back-end with 1400+ hours of coding
           experience. High adaptability and hunger to learn new technologies.
           Aims to leverage knowledge and build user-friendly web applications
           while facilitating organizational goals.

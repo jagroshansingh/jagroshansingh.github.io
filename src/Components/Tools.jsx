@@ -34,7 +34,7 @@ export const Tools = () => {
         marginTop={'2%'}
       >
         {techData.map((tech,i) => (
-          <Box key={i} border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'}>
+          <Box key={i} border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'} _hover={{transform:"scale(1.08)",transitionDuration:"0.5s"}}>
             <Image
               border={"0px"}
               boxSize={{ base: '90px', sm:'100px', lg: '120px' }}
