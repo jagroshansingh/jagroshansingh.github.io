@@ -49,7 +49,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} id="nav-menu" backgroundColor={'green.100'}>
+      <Box bg={useColorModeValue("gray.100", "gray.900")} px={{base:1,sm:4}} id="nav-menu" backgroundColor={'green.100'}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
@@ -61,7 +61,7 @@ export default function Navbar() {
           <HStack
             spacing={8}
             alignItems={"center"}
-            paddingLeft={{ base: 20, md: 0 }}
+            paddingLeft={{ base: 5, md: 0 }}
           >
             <Box border={"0px"}>
               <Image
@@ -91,7 +91,6 @@ export default function Navbar() {
               colorScheme="green"
             >
               <a
-                // href="https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link"
                 href="./Jagroshan-Singh-Resume.pdf"
                 onClick={() => window.open("https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link")}
                 target="_blank"

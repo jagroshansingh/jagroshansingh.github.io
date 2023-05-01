@@ -28,7 +28,7 @@ function App() {
         {sections.map((section, i) => (
           <Box key={i} w={"100vw"} border={"0px"}>
             <Box
-              w={"85%"}
+              w={{base:'95%',md:"85%"}}
               m={"auto"}
               border={"0px"}
               textAlign={"center"}

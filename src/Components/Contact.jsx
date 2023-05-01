@@ -19,11 +19,11 @@ import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
 export const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("jagroshansingh615@gmail.com");
   return (
-    <div id="contact">
+    <div id="contact" style={{border:'0px solid'}}>
       <hr/>
       <VStack>
         <Heading
-          size={{ base: "md", md: "xl" }}
+          size={{ base: "sm", sm:'md', md: "xl" }}
           style={{ padding: "1rem", margin: "auto 0", fontWeight: "normal" }}
         >
           Let's{" "}
@@ -48,7 +48,7 @@ export const Contact = () => {
           </span>
         </Heading>
 
-        <Heading size={{ base: "lg", md: "xl" }}>Connect with me:</Heading>
+        <Heading size={{ base: "md", md: "xl" }}>Connect with me:</Heading>
         <HStack
           mt={{ lg: 10, md: 10 }}
           spacing={5}

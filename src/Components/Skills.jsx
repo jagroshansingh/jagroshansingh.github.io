@@ -38,9 +38,13 @@ export const Skills = () => {
       src: "./pics/mongodb_icon.png",
       name: "MongoDB",
     },
+    // {
+    //   src:"https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    //   name:"TypeScript"
+    // },
     {
-      src:"https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-      name:"TypeScript"
+      src:"./pics/expressjs_logo_icon.png",
+      name:"Express"
     }
   ];
   return (
