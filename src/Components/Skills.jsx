@@ -30,10 +30,10 @@ export const Skills = () => {
       src: "./pics/react js_logo.png",
       name: "React",
     },
-    {
-      src: "./pics/redux_icon.png",
-      name: "Redux",
-    },
+    // {
+    //   src: "./pics/redux_icon.png",
+    //   name: "Redux",
+    // },
     {
       src: "./pics/mongodb_icon.png",
       name: "MongoDB",
@@ -45,6 +45,10 @@ export const Skills = () => {
     {
       src:"./pics/expressjs_logo_icon.png",
       name:"Express"
+    },
+    {
+      src:"./pics/chakra_icon.png",
+      name:"Chakra-UI"
     }
   ];
   return (
