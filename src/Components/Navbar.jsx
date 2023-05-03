@@ -91,22 +91,16 @@ export default function Navbar() {
               colorScheme="green"
             >
               <a
-                href="./Jagroshan-Singh-Resume.pdf"
+                href="./Jagroshan_Singh-Resume.pdf"
                 onClick={() => window.open("https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link")}
                 target="_blank"
                 rel="noreferrer"
-                download={'Jagroshan-Singh-Resume'}
+                download={'Jagroshan_Singh-Resume'}
               >
                 <Button variant={"solid"} >
                   Resume
                 </Button>
               </a>
-              {/* <a href="./Jagroshan_Singh_Resume.pdf" download={'Jagroshan_Singh_Resume'} className="nav-link resume" id="resume-button-1">
-                <IconButton
-                  aria-label="Add to friends"
-                  icon={<DownloadIcon />}
-                />
-              </a> */}
             </ButtonGroup>
           </Flex>
         </Flex>
