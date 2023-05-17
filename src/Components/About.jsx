@@ -1,23 +1,15 @@
-import { DownloadIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
   ButtonGroup,
-  Center,
   Flex,
   Heading,
-  HStack,
-  IconButton,
   Image,
   Stack,
-  Text,
 } from "@chakra-ui/react";
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { Typewriter } from "react-simple-typewriter";
 
 export const About = () => {
-  const navigate=useNavigate()
   return (
     <div id="about" className="about section" style={{border:'1px solid whitesmoke'}}>
       
@@ -60,7 +52,6 @@ export const About = () => {
               colorScheme="green"
             >
               <a
-                // href="https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link"
                 href="./Jagroshan_Singh-Resume.pdf"
                 onClick={() => window.open("https://drive.google.com/file/d/1oVXIj9zK7Y7aWzadf9mPdF4FxnIxjInT/view?usp=share_link")}
                 target="_blank"
@@ -71,12 +62,6 @@ export const About = () => {
                   Resume
                 </Button>
               </a>
-              {/* <a href="./Jagroshan_Singh_Resume.pdf" download={'Jagroshan_Singh_Resume'} className="nav-link resume" id="resume-button-1">
-                <IconButton
-                  aria-label="Add to friends"
-                  icon={<DownloadIcon />}
-                />
-              </a> */}
             </ButtonGroup>
           </Flex>
       </Stack>

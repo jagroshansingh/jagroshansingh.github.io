@@ -1,14 +1,8 @@
 import {
-  Box,
-  Button,
   Heading,
-  Image,
-  Link,
   SimpleGrid,
-  Text,
 } from "@chakra-ui/react";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 
 export const Projects = () => {

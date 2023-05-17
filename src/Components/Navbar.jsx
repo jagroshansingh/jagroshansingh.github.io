@@ -1,7 +1,6 @@
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
@@ -15,11 +14,8 @@ import {
 import {
   HamburgerIcon,
   CloseIcon,
-  AddIcon,
-  DownloadIcon,
 } from "@chakra-ui/icons";
 
-// const Links = ['Home', 'About', 'Skills', 'Project', 'Contact'];
 const NavItem = [
   { name: "Home", class: "nav-link home", id: "home" },
   { name: "About", class: "nav-link about", id: "about" },

@@ -1,4 +1,4 @@
-import { Box, Center, Heading, HStack, Image, VStack, Wrap } from '@chakra-ui/react'
+import { Center, Heading, HStack, Image, VStack, Wrap } from '@chakra-ui/react'
 import React from 'react'
 import GitHubCalendar from 'react-github-calendar'
 import ReactTooltip from 'react-tooltip'

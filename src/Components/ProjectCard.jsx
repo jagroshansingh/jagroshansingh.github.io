@@ -5,8 +5,6 @@ import {
   Flex,
   Heading,
   Image,
-  Link,
-  SimpleGrid,
   Stack,
   Text,
   useColorModeValue,

@@ -1,12 +1,10 @@
 import {
   Button,
-  Center,
   Heading,
   HStack,
   IconButton,
   Link,
   Stack,
-  Text,
   Tooltip,
   useClipboard,
   VStack,
@@ -14,7 +12,7 @@ import {
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
-import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("jagroshansingh615@gmail.com");

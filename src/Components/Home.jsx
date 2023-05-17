@@ -1,4 +1,4 @@
-import { Center, Heading, Text } from '@chakra-ui/react'
+import { Heading } from '@chakra-ui/react'
 import React from 'react'
 import { Typewriter } from "react-simple-typewriter";
 

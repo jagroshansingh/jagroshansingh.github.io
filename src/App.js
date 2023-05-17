@@ -1,9 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import {
-  Heading,
-  Center,
   Box,
   VStack,
 } from "@chakra-ui/react";
@@ -14,7 +11,6 @@ import { Projects } from "./Components/Projects";
 import { Contact } from "./Components/Contact";
 import { Github } from "./Components/Github";
 import styled from "styled-components";
-import ProjectCard from "./Components/ProjectCard";
 import { Tools } from "./Components/Tools";
 
 function App() {
