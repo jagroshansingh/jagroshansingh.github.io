@@ -32,7 +32,7 @@ export const Projects = () => {
       desc: "Glamox is an e-commerce platform providing beauty, personal care, cosmetic commodities and fashion solutions for both men and women.",
       techstack: ["React", "TypeScript", "Redux"],
       github: "https://github.com/rajeshdeo/glamox",
-      deployed: "https://exquisite-tapioca-454087.netlify.app/",
+      deployed: "https://glamox-nykaa-clone.vercel.app/",
     },
     {
       image: "/QuizApp_Dashboard.png",
