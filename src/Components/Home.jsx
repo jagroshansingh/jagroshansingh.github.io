@@ -19,7 +19,7 @@ export const Home = () => {
             typeSpeed={100}
             deleteSpeed={70}
             delaySpeed={1000}
-            words={['the Problem', 'also the Solution', 'Jagroshan']}
+            words={['the Problem', 'also the Solution']}
             onLoop={(loopCount) =>
               console.log(`Just completed loop ${loopCount}`)
             }
