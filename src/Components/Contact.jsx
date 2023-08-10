@@ -36,7 +36,6 @@ export const Contact = () => {
               delaySpeed={1000}
               words={[
                 "Figure out",
-                "get after it Relentlessly",
                 "Work the Problem",
               ]}
               onLoop={(loopCount) =>
@@ -112,7 +111,7 @@ export const Contact = () => {
             _hover={{ border: "2px solid #1C6FEB" }}
             leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
           >
-            Gaya, Bihar
+            Jodhpur, Rajasthan
           </Button>
 
           <Tooltip

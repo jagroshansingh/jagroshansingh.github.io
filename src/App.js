@@ -29,7 +29,7 @@ function App() {
               border={"0px"}
               textAlign={"center"}
               marginBottom={i!=0?"5%":"0%"}
-            
+              
             >
               {" "}
               {section()}{" "}

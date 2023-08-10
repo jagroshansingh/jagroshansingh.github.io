@@ -23,7 +23,7 @@ export const About = () => {
         margin={{ base: 0, md: "0 5rem", lg: "0 9rem" }}
         border={"0px"}
       >
-        <Heading
+        {/* <Heading
           marginTop={"63px"}
           color={"green"}
           borderY={"2px"}
@@ -32,7 +32,7 @@ export const About = () => {
           backgroundColor={"gray.100"}
         >
           About
-        </Heading>
+        </Heading> */}
         <Box>
           <Image
             className="home-img"
