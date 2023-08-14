@@ -18,10 +18,11 @@ export default function ProjectCard({
   techstack,
   github,
   deployed,
+  index
 }) {
   //console.log(techstack)
   return (
-    <Center py={6} className="project-card">
+    <Center py={6} className="project-card"  data-aos={index%2==0?"fade-right":"fade-left"}>
       <Stack
         borderWidth="1px"
         borderRadius="lg"

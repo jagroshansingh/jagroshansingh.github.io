@@ -5,6 +5,8 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export const Skills = () => {
   const techData = [
@@ -49,9 +51,14 @@ export const Skills = () => {
       name:"Chakra-UI"
     }
   ];
+
+  React.useEffect(()=>{
+    Aos.init({delay:100})
+  },[])
+
   return (
-    <div id="skills" style={{border:'1px solid whitesmoke'}}>
-      <Heading marginTop={'63px'} color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>Tech Stacks</Heading>
+    <div id="skills" style={{border:'0px solid whitesmoke'}}>
+      <Heading marginTop={'63px'} color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'} data-aos="fade-right">Tech Stacks</Heading>
       <Heading border={'0px'} marginTop={'3%'}>Skills</Heading>
       <SimpleGrid
         columns={{ base: 2, sm:3, lg: 5 }}
@@ -60,7 +67,7 @@ export const Skills = () => {
         marginTop={'2%'}   
       >
         {techData.map((tech,i) => (
-          <Box key={i} className="skills-card" border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'} _hover={{transform:"scale(1.08)",transitionDuration:"0.5s"}}>
+          <Box key={i} className="skills-card" border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'} _hover={{transform:"scale(1.08)",transitionDuration:"0.5s"}} data-aos="fade-up">
             <Image
               border={"0px"}
               boxSize={{ base: '90px', sm:'100px', lg: '120px' }}

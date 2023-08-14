@@ -4,8 +4,15 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export const Projects = () => {
+
+  React.useEffect(()=>{
+    Aos.init({delay:100})
+  },[])
+
   const projectsData = [
     {
       image: "/FashionGallary_LandingPage.png",
@@ -64,13 +71,13 @@ export const Projects = () => {
   ];
 
   return (
-    <div id="projects" style={{border:'1px solid whitesmoke'}}>
-      <Heading marginTop={'63px'} color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'}>
+    <div id="projects" style={{border:'0px solid whitesmoke'}}>
+      <Heading marginTop={'63px'} color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'} data-aos={"fade-right"}>
         Projects
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} marginTop={'3%'}>
         {projectsData.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} {...project} index={index}/>
         ))}
       </SimpleGrid>
     </div>

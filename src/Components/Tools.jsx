@@ -1,7 +1,14 @@
 import { Box, Heading, Image, SimpleGrid } from '@chakra-ui/react';
 import React from 'react'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 export const Tools = () => {
+
+  React.useEffect(()=>{
+    Aos.init({delay:500})
+  },[])
+
     const techData = [
         {
           src: "./pics/git_icon.png",
@@ -34,7 +41,7 @@ export const Tools = () => {
         marginTop={'2%'}
       >
         {techData.map((tech,i) => (
-          <Box key={i} border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'} _hover={{transform:"scale(1.08)",transitionDuration:"0.5s"}}>
+          <Box key={i} border={"0px"} m={"auto"} p={5} borderRadius={'10%'} boxShadow={'2xl'} _hover={{transform:"scale(1.08)",transitionDuration:"0.5s"}} data-aos="fade-up">
             <Image
               border={"0px"}
               boxSize={{ base: '90px', sm:'100px', lg: '120px' }}

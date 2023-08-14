@@ -8,8 +8,13 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export const About = () => {
+  React.useEffect(()=>{
+    Aos.init({delay:100})
+  },[])
   return (
     <div
       id="about"
@@ -22,6 +27,7 @@ export const About = () => {
         spacing="4%"
         margin={{ base: 0, md: "0 5rem", lg: "0 9rem" }}
         border={"0px"}
+        data-aos="zoom-in"
       >
         {/* <Heading
           marginTop={"63px"}
@@ -48,6 +54,7 @@ export const About = () => {
               transform: "scale(1.05)",
               transitionDuration: "0.5s",
             }}
+            
           />
           <Heading id="user-detail-name">Jagroshan Singh</Heading>
         </Box>
