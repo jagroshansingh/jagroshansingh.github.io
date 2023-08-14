@@ -17,11 +17,11 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 export const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("jagroshansingh615@gmail.com");
   return (
-    <div id="contact" style={{border:'0px solid'}}>
-      <hr/>
+    <div id="contact" style={{ border: "0px solid" }}>
+      <hr />
       <VStack>
         <Heading
-          size={{ base: "sm", sm:'md', md: "xl" }}
+          size={{ base: "md", sm: "xl" }}
           style={{ padding: "1rem", margin: "auto 0", fontWeight: "normal" }}
         >
           Let's{" "}
@@ -34,10 +34,7 @@ export const Contact = () => {
               typeSpeed={100}
               deleteSpeed={70}
               delaySpeed={1000}
-              words={[
-                "Figure out",
-                "Work the Problem",
-              ]}
+              words={["Figure out", "Work the Problem"]}
               onLoop={(loopCount) =>
                 console.log(`Just completed loop ${loopCount}`)
               }
@@ -52,7 +49,6 @@ export const Contact = () => {
           px={5}
           alignItems="flex-start"
         >
-
           <Link
             id="contact-github"
             href="https://github.com/jagroshansingh"
