@@ -7,7 +7,7 @@ import "aos/dist/aos.css"
 
 export const Github = () => {
   React.useEffect(()=>{
-    Aos.init({delay:100})
+    setTimeout(()=>{Aos.init({delay:100})},200)
   },[])
 
   return (
@@ -24,7 +24,7 @@ export const Github = () => {
         GitHub
       </Heading>
       <VStack spacing={9}>
-        <Center className="react-activity-calendar">
+        <Center className="react-activity-calendar" data-aos={"fade-up"}>
           <GitHubCalendar username="jagroshansingh">
             <ReactTooltip html delayShow={20} />
           </GitHubCalendar>
@@ -34,10 +34,12 @@ export const Github = () => {
             <Image
               id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=jagroshansingh&show_icons=true&theme=radical"
+              data-aos={"fade-right"}
             />
             <Image
               id="github-streak-stats"
               src="https://github-readme-streak-stats.herokuapp.com?user=jagroshansingh&theme=dark"
+              data-aos={"fade-left"}
             />
           </Wrap>
         </HStack>
@@ -45,6 +47,7 @@ export const Github = () => {
           <Image
             id="github-top-langs"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=jagroshansingh"
+            data-aos={"fade-up"}
           />
         </Center>
       </VStack>

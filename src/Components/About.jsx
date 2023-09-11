@@ -19,7 +19,7 @@ export const About = () => {
     <div
       id="about"
       className="about section"
-      style={{ border: "1px solid whitesmoke" }}
+      style={{ border: "0px solid whitesmoke" }}
     >
       <Stack
         direction="column"

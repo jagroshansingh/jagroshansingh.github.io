@@ -20,7 +20,7 @@ export default function ProjectCard({
   deployed,
   index
 }) {
-  //console.log(techstack)
+  
   return (
     <Center py={6} className="project-card"  data-aos={index%2==0?"fade-right":"fade-left"}>
       <Stack

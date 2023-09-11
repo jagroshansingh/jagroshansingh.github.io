@@ -75,7 +75,7 @@ export const Projects = () => {
       <Heading marginTop={'63px'} color={'green'} borderY={'2px'} marginBottom={'2%'} p={'0.5%'} backgroundColor={'gray.100'} data-aos={"fade-right"}>
         Projects
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} marginTop={'3%'}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} marginTop={'3%'} border={'0px'}>
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} index={index}/>
         ))}
